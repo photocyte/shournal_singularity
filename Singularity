@@ -26,7 +26,10 @@ MAINTAINER Timothy R. Fallon
     dpkg -I ${PACKAGE_NAME} ##Print some information about the package dependencies
     apt-get install -y -f /tmp/${PACKAGE_NAME}
     ###
-
+    
+    chown root /usr/bin/shournal-run
+    chmod u+s /usr/bin/shournal-run      
+  
     ### Cleanup
     rm -f *.deb
     apt-get autoremove --purge --yes
