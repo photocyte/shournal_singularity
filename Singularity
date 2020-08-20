@@ -11,7 +11,7 @@ MAINTAINER Timothy R. Fallon
 %post
     PACKAGE_VER="2.3"
     PACKAGE_NAME="shournal_${PACKAGE_VER}_amd64.deb"
-    BUILD_PACKAGES="wget apt-utils apt-transport-https"
+    BUILD_PACKAGES="wget apt-utils apt-transport-https htop"
     DEBIAN_FRONTEND=noninteractive
 
     apt-get update
