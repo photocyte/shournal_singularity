@@ -24,7 +24,7 @@ MAINTAINER Timothy R. Fallon
     cd /tmp
     wget -q https://github.com/tycho-kirchner/shournal/releases/download/v${PACKAGE_VER}/${PACKAGE_NAME}
     dpkg -I ${PACKAGE_NAME} ##Print some information about the package dependencies
-    apt-get install -f /tmp/${PACKAGE_NAME}
+    apt-get install -y -f /tmp/${PACKAGE_NAME}
     ###
 
     ### Cleanup
